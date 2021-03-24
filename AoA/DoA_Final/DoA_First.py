@@ -17,17 +17,19 @@ cf.go_offline()
 
 d = 0.35 # Inter element spacing [lambda]
 M = 3  # number of antenna elements in the antenna system (ULA)
-theta = 60  # incident angle of the test signal [deg]
+theta = 45  # incident angle of the test signal [deg]
 N = 160  # sample size signal received in this pahse
 
-new_data = pd.read_csv('rtls_raw_iq_samples_11.csv')
+# new_data = pd.read_csv('rtls_raw_iq_samples_passif_0.csv')
+new_data = pd.read_csv('rtls_true_iq_samples_passif_0_45_1.csv')
 
 ant_1 = []
 ant_2 = []
 ant_3 = []
 ant_final = []
 calc = 0
-for i in range(16, 496, 16):
+# here is trying to find the iq samples associated with each ANT!
+for i in range(16, 496, 16): # Start, end, step --> 30 points!
     if (calc == 0) or (calc % 3 == 0):
         for j in range(i - 16, i):
             ant_1.append(complex(new_data['i'][j], new_data['q'][j]))
@@ -48,7 +50,7 @@ ant_final.append(ant_2)
 ant_final.append(ant_3)
 npa_ant_final = np.asarray(ant_final)
 N = len(ant_final[0])
-noise = np.random.normal(0,np.sqrt(10**-1),(M,N))
+noise = np.random.normal(0,np.sqrt(10**-1),(M,N)) #why did he added extra noise??
 
 R = corr_matrix_estimate(npa_ant_final.T, imp="mem_eff")
 
@@ -75,7 +77,7 @@ for i in range(len(ant_final)):
 
 # incident_angles = np.asarray(final_angle_teta)
 incident_angles = np.asarray(final_angle_teta_one_list)
-print(len(incident_angles))
+print(len(incident_angles), incident_angles.max())
 array_alignment = np.arange(0, M, 1)* d
 
 ula_scanning_vectors = gen_ula_scanning_vectors(array_alignment, final_angle_teta_one_list)
@@ -84,9 +86,9 @@ ula_scanning_vectors = gen_ula_scanning_vectors(array_alignment, final_angle_tet
 # Bartlett = DOA_Bartlett(R,ula_scanning_vectors)
 # DOA_plot(Bartlett, incident_angles, log_scale_min = -50)
 
-print(ula_scanning_vectors)
-print(len(ula_scanning_vectors))
-print(len(ula_scanning_vectors[0]))
+print('ula is', ula_scanning_vectors)
+# print(len(ula_scanning_vectors))
+# print(len(ula_scanning_vectors[0]))
 # print(ula_scanning_vectors[1])
 # print(ula_scanning_vectors[2])
 

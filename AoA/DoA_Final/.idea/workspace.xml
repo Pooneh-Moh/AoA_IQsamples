@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b71d26e-f91b-41bd-91a8-10fa8c8de70d" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="0b71d26e-f91b-41bd-91a8-10fa8c8de70d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/AoA_IQsamples.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_17_2021_18_00_12_rtls_raw_iq_samples_f88a5e2d8f14_0.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_19_2021_11_29_34_rtls_raw_iq_samples_f88a5e2d8f14_0.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/81data_points/test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoA_all_the_algorithms_test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoA_all_the_algorithms_test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoA_all_the_algorithms_test3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoA_all_the_algorithms_test3_ant_ref.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist_3ant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist_oldway.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poon_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pooneh_test1.2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pooneh_test1.3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pooneh_test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pooneh_test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rtls_raw_iq_samples_f88a5e2d88c5_0.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rtls_raw_iq_samples_f88a5e2d8cee_0.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theta_extract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theta_extract_Algo_new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theta_extract_iter_ant_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theta_extract_plus old way.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theta_extract_unequal_antlist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theta_extract_with40_ref_ant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theta_extract_with_ref_ant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DoA_Final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DoA_Final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoA_First.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoA_First.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoA_Forth_Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoA_Forth_Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoA_Second.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoA_Second.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoA_all_the_algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoA_all_the_algorithms.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,48 +66,36 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1PQ8nVTpslIcOAJ1iKsoem6JBt0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/81data_points" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\mahdis_test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\81data_points" />
+      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final" />
+      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\mahdis_test" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.my_DoA_implementation_final">
-    <configuration name="DoA_all_the_algorithms" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DoA_Final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DoA_all_the_algorithms.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test1">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="my_DoA_implementation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pkts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,12 +126,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mahdis_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_DoA_implementation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mahdis_test/pkts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="my_DoA_implementation_final" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pkts_equal_antlist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,12 +148,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mahdis_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_DoA_implementation_final.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,20 +162,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plot_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/test1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,7 +181,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test1_with_pkts (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DoA_Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/test1_with_pkts.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1_with_pkts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,12 +208,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\81data_points\test1_with_pkts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.my_DoA_implementation_final" />
-        <item itemvalue="Python.my_DoA_implementation" />
-        <item itemvalue="Python.DoA_all_the_algorithms" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.plot_test" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.test1_with_pkts (1)" />
+        <item itemvalue="Python.test1_with_pkts" />
+        <item itemvalue="Python.pkts" />
+        <item itemvalue="Python.pkts_equal_antlist" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +269,85 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DoA_Final$DoA_First.coverage" NAME="DoA_First Coverage Results" MODIFIED="1566221661795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="745" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616508349129">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="419" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.860@0.0.1440.860" timestamp="1615194107761" />
+    <state x="-1815" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1616148817714" />
+    <state x="745" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616508349129" />
+    <state x="1006" y="377" key="FileChooserDialogImpl" timestamp="1616514616737">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1006" y="377" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616514616737" />
+    <state width="1413" height="258" key="GridCell.Tab.0.bottom" timestamp="1614955822378">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1413" height="258" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1614858765465" />
+    <state width="1413" height="258" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614955822378" />
+    <state width="1413" height="258" key="GridCell.Tab.0.center" timestamp="1614955822378">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1413" height="258" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1614858765465" />
+    <state width="1413" height="258" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614955822378" />
+    <state width="1413" height="258" key="GridCell.Tab.0.left" timestamp="1614955822378">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1413" height="258" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1614858765465" />
+    <state width="1413" height="258" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614955822378" />
+    <state width="1413" height="258" key="GridCell.Tab.0.right" timestamp="1614955822378">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1413" height="258" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1614858765465" />
+    <state width="1413" height="258" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614955822378" />
+    <state width="1413" height="258" key="GridCell.Tab.1.bottom" timestamp="1614955822378">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1413" height="258" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1614858765465" />
+    <state width="1413" height="258" key="GridCell.Tab.1.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614955822378" />
+    <state width="1413" height="258" key="GridCell.Tab.1.center" timestamp="1614955822378">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1413" height="258" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1614858765465" />
+    <state width="1413" height="258" key="GridCell.Tab.1.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614955822378" />
+    <state width="1413" height="258" key="GridCell.Tab.1.left" timestamp="1614955822378">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1413" height="258" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1614858765465" />
+    <state width="1413" height="258" key="GridCell.Tab.1.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614955822378" />
+    <state width="1413" height="258" key="GridCell.Tab.1.right" timestamp="1614955822378">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1413" height="258" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1614858765465" />
+    <state width="1413" height="258" key="GridCell.Tab.1.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614955822378" />
+    <state x="656" y="257" key="SettingsEditor" timestamp="1616510179503">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="656" y="257" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616510179503" />
+    <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1616578734930">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="725" height="435" key="XDebugger.FullValuePopup/0.0.1440.860@0.0.1440.860" timestamp="1615381006417" />
+    <state width="1288" height="708" key="XDebugger.FullValuePopup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616578734930" />
+    <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616508451454">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616508451454" />
+    <state x="852" y="175" width="838" height="1032" key="search.everywhere.popup" timestamp="1616580213389">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="852" y="175" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616580213389" />
   </component>
 </project>

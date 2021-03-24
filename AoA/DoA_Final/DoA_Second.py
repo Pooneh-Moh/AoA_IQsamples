@@ -17,12 +17,13 @@ cf.go_offline()
 
 d = 0.35 # Inter element spacing [lambda]
 M = 3  # number of antenna elements in the antenna system (ULA)
-theta = 90  # incident angle of the test signal [deg]
+theta = 45  # incident angle of the test signal [deg]
 N = 3*160  # sample size signal received in this pahse
 
 # Reading the csv  file and extracting the I/Q samples
-new_data = pd.read_csv('rtls_raw_iq_samples_9.csv')
-
+# new_data = pd.read_csv('rtls_raw_iq_samples_passif_0.csv')
+# new_data = pd.read_csv('C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/tools/ble5stack/rtls_agent/examples/rtls_aoa_iq_with_rtls_util_export_into_csv_test_log/02_17_2021_11_03_17_rtls_raw_iq_samples.csv')
+new_data = pd.read_csv('rtls_true_iq_samples_passif_0_45_1.csv')
 ant_1 = []
 ant_2 = []
 ant_3 = []

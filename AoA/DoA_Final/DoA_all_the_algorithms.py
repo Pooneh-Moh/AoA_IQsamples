@@ -16,14 +16,19 @@ cf.go_offline()
 
 
 
-d = 0.5 # Inter element spacing [lambda]
+d = 0.3 # Inter element spacing [lambda]
 M = 3  # number of antenna elements in the antenna system (ULA)
-theta = 60  # incident angle of the test signal [deg]
+theta = 45  # incident angle of the test signal [deg]
 N = 3*160  # sample size signal received in this pahse
 Landa = 1
 
 # Reading the csv  file and extracting the I/Q samples
-new_data = pd.read_csv('rtls_raw_iq_samples_13.csv')
+# new_data = pd.read_csv('rtls_raw_iq_samples_13.csv')
+# new_data = pd.read_csv('rtls_raw_iq_samples_passif_0.csv')
+# new_data = pd.read_csv('rtls_raw_iq_samples_f88a5e2d88c5_0.csv')
+# new_data = pd.read_csv('C:/ti/simplelink_cc13x2_26x2_sdk_4_30_00_54/tools/ble5stack/rtls_agent/examples/rtls_aoa_iq_with_rtls_util_export_into_csv_test_log/02_17_2021_11_03_17_rtls_raw_iq_samples.csv')
+new_data = pd.read_csv('02_17_2021_18_00_12_rtls_raw_iq_samples_f88a5e2d8f14_0.csv')
+# new_data = pd.read_csv('rtls_true_iq_samples_passif_0_45_1.csv')
 
 ant_1 = []
 ant_2 = []
@@ -50,7 +55,7 @@ ant_final.append(ant_1)
 ant_final.append(ant_2)
 ant_final.append(ant_3)
 
-# print(len(ant_final[0]))
+print( 'this is ant_final', len(ant_final) , len(ant_1), len(ant_3), len(ant_2), len(ant_final[0]))
 
 # angle_teta_list = []
 #
@@ -76,6 +81,7 @@ y = np.zeros(M) # y coordinates
 
 # final list of the complex I/Q numbers
 npa_ant_final = np.asarray(ant_final)
+print('npa_ant_final', len(npa_ant_final), len(npa_ant_final[0]))
 
 # R_2 = corr_matrix_estimate(npa_ant_final.T, imp="mem_eff")
 # Array response vector of the test signal
@@ -83,12 +89,12 @@ a = np.exp(np.arange(0,M,1)*1j*2*np.pi*d*(1/Landa)*np.cos(np.deg2rad(theta)))
 # a_2 = np.exp(np.arange(0,M,1)*1j*2*np.pi*d*(1/Landa)*np.cos(np.deg2rad(theta+10)))
 # a_3 = np.exp(np.arange(0,M,1)*1j*2*np.pi*d*(1/Landa)*np.cos(np.deg2rad(theta+20)))
 
-print(a)
+# print(a)
 # Generate multichannel test signal
 # soi = np.random.normal(0,1,N)  # Signal of Interest
 
-soi_matrix  = np.outer(npa_ant_final, a).T
-
+soi_matrix = np.outer(npa_ant_final, a).T
+print('SOI_matrix', len(soi_matrix), len(soi_matrix[0]), '\n ------')
 # soi_matrix_2  = np.outer(npa_ant_final, a_2).T
 # soi_matrix_3  = np.outer(npa_ant_final, a_3).T
 
@@ -100,21 +106,19 @@ rec_signal = soi_matrix + noise
 
 # rec_signal_2 = soi_matrix_2 + noise
 # rec_signal_3 = soi_matrix_3 + noise
-
+print('Rec_seg', len(rec_signal.T), len(rec_signal.T[0]))
 # Estimating the spatial correlation matrix
 R = corr_matrix_estimate(rec_signal.T, imp="mem_eff")
-
+# R = corr_matrix_estimate(soi_matrix.T, imp="mem_eff")
 # R_2 = corr_matrix_estimate(rec_signal_2.T, imp="mem_eff")
 # R_3 = corr_matrix_estimate(rec_signal_3.T, imp="mem_eff")
 
 # incident_angles= np.arange(0,181,1)
 
 # Generate scanning vectors with the general purpose function
-x = np.arange(0, M, 1) * d  # x coordinates
-y = np.zeros(M) # y coordinates
 scanning_vectors = gen_scanning_vectors(M, x, y, incident_angles)
 
-
+print('R and scanning vector are',len(R), len(scanning_vectors), len(R[0]), R[0])
 Bartlett = DOA_Bartlett(R, scanning_vectors)
 Capon = DOA_Capon(R, scanning_vectors)
 # MEM = DOA_MEM(R, scanning_vectors, column_select = 1)
@@ -133,14 +137,14 @@ MUSIC = DOA_MUSIC(R, scanning_vectors, signal_dimension = 1)
 # MUSIC_3 = DOA_MUSIC(R_3, scanning_vectors, signal_dimension = 1)
 
 # Get matplotlib axes object
-axes = plt.axes()
+# axes = plt.axes()
 
 # Plot results on the same fiugre
-DOA_plot(Bartlett, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
-DOA_plot(Capon, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
+# DOA_plot(Bartlett, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
+# DOA_plot(Capon, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
 # DOA_plot(MEM, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
 # DOA_plot(LPM, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
-DOA_plot(MUSIC, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
+# DOA_plot(MUSIC, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
 
 
 # DOA_plot(Bartlett_2, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
@@ -155,5 +159,5 @@ DOA_plot(MUSIC, incident_angles, log_scale_min = -50, axes=axes, alias_highlight
 # DOA_plot(MUSIC_3, incident_angles, log_scale_min = -50, axes=axes, alias_highlight=False)
 
 # axes.legend(("Bartlett","Capon","MEM","LPM","MUSIC"))
-axes.legend(("Bartlett","Capon","MUSIC"))
-plt.show()
+# axes.legend(("Bartlett","Capon","MUSIC"))
+# plt.show()
