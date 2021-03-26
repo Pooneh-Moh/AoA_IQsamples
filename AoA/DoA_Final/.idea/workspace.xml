@@ -16,43 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b71d26e-f91b-41bd-91a8-10fa8c8de70d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/AoA_IQsamples.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_17_2021_18_00_12_rtls_raw_iq_samples_f88a5e2d8f14_0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_19_2021_11_29_34_rtls_raw_iq_samples_f88a5e2d8f14_0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/81data_points/test1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoA_all_the_algorithms_test1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoA_all_the_algorithms_test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoA_all_the_algorithms_test3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoA_all_the_algorithms_test3_ant_ref.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist_3ant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist_oldway.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poon_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pooneh_test1.2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pooneh_test1.3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pooneh_test1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pooneh_test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rtls_raw_iq_samples_f88a5e2d88c5_0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rtls_raw_iq_samples_f88a5e2d8cee_0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theta_extract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theta_extract_Algo_new.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theta_extract_iter_ant_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theta_extract_plus old way.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theta_extract_unequal_antlist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theta_extract_with40_ref_ant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theta_extract_with_ref_ant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DoA_Final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DoA_Final.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0b71d26e-f91b-41bd-91a8-10fa8c8de70d" name="Default Changelist" comment="In the file with 81 data_points, the phi and tetha angles are calculated semi_correctly. (name: test1) &#10;Also the files calculating each pkt, are only looking through the first pkt. This needs to be changed. &#10;The old way is more reliable. Calculating tetha shouldn't be like that. &#10;The reference and the gaurd data should be discard. For 81 data point, we start from 12th data. &#10;Using the new version of sdk, we end up having only 44 data points. The first 8 should be discarded an the rest are the antenna data points. This makes the calculations easier.">
+      <change afterPath="$PROJECT_DIR$/81data_points/test1_for_sdk40.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoA_First.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoA_First.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoA_Forth_Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoA_Forth_Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoA_Second.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoA_Second.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoA_all_the_algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoA_all_the_algorithms.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,16 +61,16 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\mahdis_test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\81data_points" />
       <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final" />
       <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\mahdis_test" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\mahdis_test" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.test1">
+  <component name="RunManager" selected="Python.test1_for_sdk40">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,28 +115,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pkts_equal_antlist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DoA_Final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mahdis_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,6 +126,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1_for_sdk40" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DoA_Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/test1_for_sdk40.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test1_for_sdk40" />
         <item itemvalue="Python.test1" />
         <item itemvalue="Python.test1_with_pkts (1)" />
         <item itemvalue="Python.test1_with_pkts" />
         <item itemvalue="Python.pkts" />
-        <item itemvalue="Python.pkts_equal_antlist" />
       </list>
     </recent_temporary>
   </component>
@@ -264,6 +236,21 @@
       <workItem from="1572305371197" duration="101000" />
       <workItem from="1572463027028" duration="770000" />
     </task>
+    <task id="LOCAL-00001" summary="In the file with 81 data_points, the phi and tetha angles are calculated semi_correctly. (name: test1) &#10;Also the files calculating each pkt, are only looking through the first pkt. This needs to be changed. &#10;The old way is more reliable. Calculating tetha shouldn't be like that. &#10;The reference and the gaurd data should be discard. For 81 data point, we start from 12th data. &#10;Using the new version of sdk, we end up having only 44 data points. The first 8 should be discarded an the rest are the antenna data points. This makes the calculations easier.">
+      <created>1616588186277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616588186277</updated>
+    </task>
+    <task id="LOCAL-00002" summary="In the file with 81 data_points, the phi and tetha angles are calculated semi_correctly. (name: test1) &#10;Also the files calculating each pkt, are only looking through the first pkt. This needs to be changed. &#10;The old way is more reliable. Calculating tetha shouldn't be like that. &#10;The reference and the gaurd data should be discard. For 81 data point, we start from 12th data. &#10;Using the new version of sdk, we end up having only 44 data points. The first 8 should be discarded an the rest are the antenna data points. This makes the calculations easier.">
+      <created>1616588260368</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616588260368</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,12 +261,28 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="In the file with 81 data_points, the phi and tetha angles are calculated semi_correctly. (name: test1) &#10;Also the files calculating each pkt, are only looking through the first pkt. This needs to be changed. &#10;The old way is more reliable. Calculating tetha shouldn't be like that. &#10;The reference and the gaurd data should be discard. For 81 data point, we start from 12th data. &#10;Using the new version of sdk, we end up having only 44 data points. The first 8 should be discarded an the rest are the antenna data points. This makes the calculations easier." />
+    <option name="LAST_COMMIT_MESSAGE" value="In the file with 81 data_points, the phi and tetha angles are calculated semi_correctly. (name: test1) &#10;Also the files calculating each pkt, are only looking through the first pkt. This needs to be changed. &#10;The old way is more reliable. Calculating tetha shouldn't be like that. &#10;The reference and the gaurd data should be discard. For 81 data point, we start from 12th data. &#10;Using the new version of sdk, we end up having only 44 data points. The first 8 should be discarded an the rest are the antenna data points. This makes the calculations easier." />
   </component>
   <component name="WindowStateProjectService">
     <state x="745" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616508349129">
@@ -332,19 +335,27 @@
     </state>
     <state width="1413" height="258" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1614858765465" />
     <state width="1413" height="258" key="GridCell.Tab.1.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614955822378" />
+    <state x="930" y="329" key="RollbackChangesDialog" timestamp="1616753202035">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="930" y="329" key="RollbackChangesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1616753202035" />
     <state x="656" y="257" key="SettingsEditor" timestamp="1616510179503">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="656" y="257" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616510179503" />
+    <state x="772" y="367" key="Vcs.Push.Dialog.v2" timestamp="1616588266702">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="772" y="367" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616588266702" />
     <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1616578734930">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="725" height="435" key="XDebugger.FullValuePopup/0.0.1440.860@0.0.1440.860" timestamp="1615381006417" />
     <state width="1288" height="708" key="XDebugger.FullValuePopup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616578734930" />
-    <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616508451454">
+    <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616587894570">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616508451454" />
+    <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616587894570" />
     <state x="852" y="175" width="838" height="1032" key="search.everywhere.popup" timestamp="1616580213389">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
