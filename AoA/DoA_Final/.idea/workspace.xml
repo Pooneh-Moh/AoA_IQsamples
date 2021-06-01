@@ -25,9 +25,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b71d26e-f91b-41bd-91a8-10fa8c8de70d" name="Default Changelist" comment="In the file with 81 data_points, the phi and tetha angles are calculated semi_correctly. (name: test1) &#10;Also the files calculating each pkt, are only looking through the first pkt. This needs to be changed. &#10;The old way is more reliable. Calculating tetha shouldn't be like that. &#10;The reference and the gaurd data should be discard. For 81 data point, we start from 12th data. &#10;Using the new version of sdk, we end up having only 44 data points. The first 8 should be discarded an the rest are the antenna data points. This makes the calculations easier.">
-      <change afterPath="$PROJECT_DIR$/81data_points/test1_for_sdk40.py" afterDir="false" />
+    <list default="true" id="0b71d26e-f91b-41bd-91a8-10fa8c8de70d" name="Default Changelist" comment="for the sdk 3.40 and Antenna_array1 we have the following code to calculate the theta.">
+      <change afterPath="$PROJECT_DIR$/81data_points/rtls_test_results/Ant_1/test1_for_sdk40.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1/calculate_phase_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1/test/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1/test/test1/test1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1/test1_for_RAW_samples.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1/test1_for_RAW_samples_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/81data_points/rtls_test_results/test_at_30or120_degree/.idea/test_at_30or120_degree.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/81data_points/test1_read_all_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/81data_points/test1_for_sdk40.py" beforeDir="false" afterPath="$PROJECT_DIR$/81data_points/test1_for_sdk40.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist_oldway.py" beforeDir="false" afterPath="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist_oldway.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +63,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/81data_points" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\81data_points\rtls_test_results\Ant_1" />
+      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\mahdis_test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\81data_points\rtls_test_results\RAW_sample_slotduration1" />
+      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\81data_points\rtls_test_results\Ant_1" />
       <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\81data_points" />
       <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final" />
       <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\mahdis_test" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\mahdis_test" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.test1_for_sdk40">
+  <component name="RunManager" selected="Python.pkts_equal_antlist_oldway">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,7 +106,51 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pkts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="calc_phase_with_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DoA_Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1/calc_phase_with_time.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="calculate_phase_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DoA_Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1/calculate_phase_time.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pkts_equal_antlist_oldway" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +163,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mahdis_test/pkts.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mahdis_test/pkts_equal_antlist_oldway.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,64 +172,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DoA_Final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/test1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test1_for_sdk40" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DoA_Final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/test1_for_sdk40.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test1_with_pkts (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DoA_Final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/test1_with_pkts.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test1_with_pkts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test1_for_RAW_samples (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DoA_Final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,12 +180,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\pooneh\Documents\GitHub\AoA_IQsamples\AoA\DoA_Final\81data_points\test1_with_pkts.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1/test1_for_RAW_samples.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1_for_RAW_samples_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DoA_Final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/81data_points/rtls_test_results/RAW_sample_slotduration1/test1_for_RAW_samples_time.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test1_for_sdk40" />
-        <item itemvalue="Python.test1" />
-        <item itemvalue="Python.test1_with_pkts (1)" />
-        <item itemvalue="Python.test1_with_pkts" />
-        <item itemvalue="Python.pkts" />
+        <item itemvalue="Python.pkts_equal_antlist_oldway" />
+        <item itemvalue="Python.calculate_phase_time" />
+        <item itemvalue="Python.test1_for_RAW_samples_time" />
+        <item itemvalue="Python.test1_for_RAW_samples (1)" />
+        <item itemvalue="Python.calc_phase_with_time" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616588260368</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="for the sdk 3.40 and Antenna_array1 we have the following code to calculate the theta.">
+      <created>1616753671824</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616753671824</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +291,11 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -282,7 +316,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="In the file with 81 data_points, the phi and tetha angles are calculated semi_correctly. (name: test1) &#10;Also the files calculating each pkt, are only looking through the first pkt. This needs to be changed. &#10;The old way is more reliable. Calculating tetha shouldn't be like that. &#10;The reference and the gaurd data should be discard. For 81 data point, we start from 12th data. &#10;Using the new version of sdk, we end up having only 44 data points. The first 8 should be discarded an the rest are the antenna data points. This makes the calculations easier." />
-    <option name="LAST_COMMIT_MESSAGE" value="In the file with 81 data_points, the phi and tetha angles are calculated semi_correctly. (name: test1) &#10;Also the files calculating each pkt, are only looking through the first pkt. This needs to be changed. &#10;The old way is more reliable. Calculating tetha shouldn't be like that. &#10;The reference and the gaurd data should be discard. For 81 data point, we start from 12th data. &#10;Using the new version of sdk, we end up having only 44 data points. The first 8 should be discarded an the rest are the antenna data points. This makes the calculations easier." />
+    <MESSAGE value="for the sdk 3.40 and Antenna_array1 we have the following code to calculate the theta." />
+    <option name="LAST_COMMIT_MESSAGE" value="for the sdk 3.40 and Antenna_array1 we have the following code to calculate the theta." />
   </component>
   <component name="WindowStateProjectService">
     <state x="745" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616508349129">
@@ -352,13 +387,15 @@
     </state>
     <state width="725" height="435" key="XDebugger.FullValuePopup/0.0.1440.860@0.0.1440.860" timestamp="1615381006417" />
     <state width="1288" height="708" key="XDebugger.FullValuePopup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616578734930" />
-    <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616587894570">
+    <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616753891782">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616587894570" />
-    <state x="852" y="175" width="838" height="1032" key="search.everywhere.popup" timestamp="1616580213389">
+    <state x="1033" y="590" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1616753891782" />
+    <state x="852" y="175" width="838" height="1032" key="search.everywhere.popup" timestamp="1617785157820">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="852" y="175" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1616580213389" />
+    <state x="852" y="175" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1617785157820" />
   </component>
 </project>
